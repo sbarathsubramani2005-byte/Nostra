@@ -1,0 +1,261 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#fff;
+}
+
+.offer-bar{
+background:#1D232C;
+color:white;
+padding:10px;
+display:flex;
+justify-content:center;
+gap:20px;
+align-items:center;
+
+}
+
+.offer-bar i{
+cursor:pointer;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:black;
+}
+
+.menu-icon{
+display:none;
+cursor:pointer;
+}
+
+.side-navbar{
+position:fixed;
+top:0;
+right:-250px;
+width:250px;
+height:100%;
+background:#1D232C;
+color:white;
+padding:20px;
+transition:0.5s;
+z-index:1000;
+}
+
+.side-navbar a{
+display:block;
+color:white;
+text-decoration:none;
+margin-top:20px;
+}
+
+.close-nav{
+display:block;
+text-align:right;
+font-size:25px;
+cursor:pointer;
+}
+
+.hero{
+text-align:center;
+padding:20px;
+}
+
+.hero img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.hero-content{
+margin-top:20px;
+}
+
+.hero-content h1{
+font-size:40px;
+}
+
+.hero-content button{
+padding:10px 20px;
+background:black;
+color:white;
+border:none;
+margin-top:10px;
+}
+
+.brands,
+.experience,
+.products,
+.most-wanted,
+.newsletter{
+padding:40px;
+
+}
+
+.brand-container{
+display:flex;
+justify-content:space-around;
+
+
+
+flex-wrap:wrap;
+margin-top:20px;
+text-align: center;
+}
+
+.brand-container img{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    
+
+
+}
+
+
+.experience-boxes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.box{
+background:#F2F4F7;
+padding:20px;
+}
+
+.product-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.product-card img,
+.wanted-card img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.product-card button{
+margin-top:10px;
+padding:10px;
+}
+
+.wanted-card{
+position:relative;
+}
+
+.sale{
+position:absolute;
+top:10px;
+left:10px;
+background:red;
+color:white;
+padding:5px 10px;
+}
+
+.heart{
+position:absolute;
+bottom:10px;
+right:10px;
+font-size:25px;
+cursor:pointer;
+}
+
+.liked{
+color:red;
+}
+
+.newsletter{
+text-align:center;
+}
+
+.newsletter input{
+width:70%;
+padding:12px;
+margin-top:20px;
+}
+
+.newsletter button{
+padding:10px 20px;
+background:black;
+color:white;
+border:none;
+margin-top:15px;
+}
+
+footer{
+background:#1D232C;
+color:white;
+padding:40px;
+}
+
+.contact-container{
+width:80%;
+max-width:600px;
+margin:50px auto;
+}
+
+.contact-container form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-container input,
+.contact-container textarea{
+padding:12px;
+}
+
+.contact-container button{
+padding:12px;
+background:black;
+color:white;
+border:none;
+}
+
+@media(max-width:768px){
+
+.nav-links{
+    display:none;
+}
+
+.menu-icon{
+    display:block;
+    font-size:25px;
+}
+
+.hero img{
+    height:250px;
+}
+
+.hero-content h1{
+    font-size:25px;
+}
+
+.newsletter input{
+    width:100%;
+}
+}
